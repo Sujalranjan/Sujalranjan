@@ -1,6 +1,6 @@
 <!-- ════════════════════════════  HEADER  ════════════════════════════ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:0b3d91,100:00f7ff&height=220&section=header&text=Sujal%20Ranjan&fontSize=56&fontColor=ffffff&fontAlignY=36&animation=fadeIn&desc=I%20build%20software%20that%20watches%2C%20learns%20%26%20automates&descSize=18&descAlignY=58" width="100%" alt="header" />
+  <img src="./assets/header.svg" width="100%" alt="Sujal Ranjan" />
 </p>
 
 <p align="center">
@@ -10,7 +10,6 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=Sujalranjan&style=for-the-badge&color=0b3d91&label=PROFILE+VIEWS" alt="profile views" />
   <a href="https://github.com/Sujalranjan?tab=followers"><img src="https://img.shields.io/github/followers/Sujalranjan?style=for-the-badge&logo=github&color=00b4d8&labelColor=0d1117" alt="followers" /></a>
   <img src="https://img.shields.io/badge/status-building%20in%20public-00f7ff?style=for-the-badge&labelColor=0d1117" alt="status" />
 </p>
@@ -142,10 +141,6 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
   <img height="170" src="https://streak-stats.demolab.com?user=Sujalranjan&theme=tokyonight&hide_border=true" alt="GitHub streak" />
 </p>
 
-<p align="center">
-  <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Sujalranjan&theme=tokyo-night&hide_border=true&area=true&custom_title=Contribution%20Pulse" alt="activity graph" />
-</p>
-
 ---
 
 ## ⚡ Live Activity Feed
@@ -185,4 +180,4 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 <!--END:UPDATED-->
 </p>
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00f7ff,50:0b3d91,100:0d1117&height=120&section=footer" width="100%" alt="footer" />
+<img src="./assets/footer.svg" width="100%" alt="" />
