@@ -30,6 +30,7 @@ PAD_X, PAD_TOP, PAD_BOTTOM = 26, 22, 34
 SPEED = 95            # px per second
 PAUSE = 2.5           # seconds of empty board before the loop restarts
 WAVE_AMP, WAVE_LEN = 3.2, 52
+BODY_LEN = 240        # longer than the longest body layer, plus head and margin
 
 
 # ── data ────────────────────────────────────────────────────────────────────
@@ -70,7 +71,10 @@ def plan_route(targets: list[tuple[float, float]], width: float, mid: float) -> 
         left.remove(nxt)
         route.append(nxt)
         pos = nxt
+    # Exit far enough right that the whole body (BODY_LEN) is off the board
+    # before the pause, otherwise the tail is left frozen on screen.
     route.append((width + 60.0, mid))
+    route.append((width + 60.0 + BODY_LEN, mid))
     return route
 
 
