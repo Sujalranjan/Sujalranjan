@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/Sujalranjan?tab=followers"><img src="https://img.shields.io/github/followers/Sujalranjan?style=for-the-badge&logo=github&color=b388ff&labelColor=0b1026" alt="followers" /></a>
-  <img src="https://img.shields.io/badge/status-building%20in%20public-7cffcb?style=for-the-badge&labelColor=0b1026" alt="status" />
+  <a href="https://github.com/Sujalranjan?tab=followers"><img src="https://img.shields.io/github/followers/Sujalranjan?style=for-the-badge&logo=github&color=c4b5fd&labelColor=06131f" alt="followers" /></a>
+  <img src="https://img.shields.io/badge/status-building%20in%20public-7cffcb?style=for-the-badge&labelColor=06131f" alt="status" />
 </p>
 <!--END:HEADER-->
 
@@ -139,8 +139,8 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 
 <!--START:STATS-->
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Sujalranjan&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=0b1026&title_color=7cffcb&icon_color=b388ff&text_color=d7f7ff&ring_color=7cffcb" alt="GitHub stats" />
-  <img height="170" src="https://streak-stats.demolab.com?user=Sujalranjan&hide_border=true&background=0b1026&ring=7cffcb&fire=b388ff&currStreakNum=7cffcb&currStreakLabel=7cffcb&sideNums=d7f7ff&sideLabels=d7f7ff&dates=d7f7ff&stroke=b388ff" alt="GitHub streak" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Sujalranjan&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=0b1a24&title_color=7cffcb&icon_color=c4b5fd&text_color=d7f7ff&ring_color=7cffcb" alt="GitHub stats" />
+  <img height="170" src="https://streak-stats.demolab.com?user=Sujalranjan&hide_border=true&background=0b1a24&ring=7cffcb&fire=c4b5fd&currStreakNum=7cffcb&currStreakLabel=7cffcb&sideNums=d7f7ff&sideLabels=d7f7ff&dates=d7f7ff&stroke=c4b5fd" alt="GitHub streak" />
 </p>
 <!--END:STATS-->
 
