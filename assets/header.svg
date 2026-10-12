@@ -38,7 +38,7 @@
   <path fill="#7cffcb" fill-opacity="0.12">
     <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z;M0 230 C300 210 500 250 800 228 C1000 214 1100 236 1200 230 V260 H0Z;M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z"/>
   </path>
-  <text class="tag fade" x="600" y="62" text-anchor="middle">&lt;/&gt;  FULL-STACK  ·  AUTOMATION  ·  AI SYSTEMS</text>
-  <text class="name fade" x="600" y="132" text-anchor="middle" filter="url(#glow)">Sujal Ranjan</text>
-  <text class="sub fade2" x="600" y="174" text-anchor="middle">$ building software that watches, learns &amp; automates<tspan class="cursor" fill="#7cffcb"> ▌</tspan></text>
+  <text class="tag" x="600" y="62" text-anchor="middle">&lt;/&gt;  FULL-STACK  ·  AUTOMATION  ·  AI SYSTEMS</text>
+  <text class="name" x="600" y="132" text-anchor="middle" filter="url(#glow)">Sujal Ranjan</text>
+  <text class="sub" x="600" y="174" text-anchor="middle">$ building software that watches, learns &amp; automates<tspan class="cursor" fill="#7cffcb"> ▌</tspan></text>
 </svg>

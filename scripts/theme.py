@@ -66,6 +66,19 @@ THEMES: dict[str, dict] = {
         "accent": "#0969da", "accent2": "#8250df", "text": "#1f2328", "sub": "#3d4b5c",
         "card": "#ffffff", "card_text": "#1f2328",
     },
+    # Glass themes: a frosted panel over drifting colour blobs (see glass_header_svg)
+    "glass": {
+        "label": "Frosted Glass", "style": "glass", "bg": ["#0b0b1f", "#141433", "#1e1b4b"],
+        "blobs": ["#7c3aed", "#ec4899", "#06b6d4"],
+        "accent": "#a5f3fc", "accent2": "#f0abfc", "text": "#ffffff", "sub": "#e0e7ff",
+        "card": "#141433", "card_text": "#e0e7ff",
+    },
+    "glass-aurora": {
+        "label": "Aurora Glass", "style": "glass", "bg": ["#06131f", "#0b2530", "#0f3b3a"],
+        "blobs": ["#10b981", "#8b5cf6", "#22d3ee"],
+        "accent": "#7cffcb", "accent2": "#c4b5fd", "text": "#ffffff", "sub": "#d1fae5",
+        "card": "#0b1a24", "card_text": "#d7f7ff",
+    },
 }
 
 DEFAULT_LINES = [
@@ -81,7 +94,79 @@ def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
 
+def glass_header_svg(t: dict) -> str:
+    name = esc(CONFIG.get("display_name", CONFIG["username"]))
+    tag = esc(CONFIG.get("tagline", "</>  FULL-STACK  ·  AUTOMATION  ·  AI SYSTEMS"))
+    sub = esc(CONFIG.get("subtitle", "$ building software that watches, learns & automates"))
+    b1, b2, b3 = t["blobs"]
+    a = t["accent"]
+    # The blobs are drawn twice: sharp behind everything, then blurred and clipped
+    # to the panel, which is what makes the panel read as frosted glass.
+    return f"""<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="260" viewBox="0 0 1200 260">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="{t['bg'][0]}"/><stop offset="0.6" stop-color="{t['bg'][1]}"/><stop offset="1" stop-color="{t['bg'][2]}"/>
+    </linearGradient>
+    <linearGradient id="sheen" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.22"/><stop offset="0.45" stop-color="#ffffff" stop-opacity="0.06"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.02"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.7"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.12"/><stop offset="1" stop-color="#ffffff" stop-opacity="0.4"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0"/><stop offset="0.5" stop-color="#ffffff" stop-opacity="0.18"/><stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="38"/></filter>
+    <filter id="frost" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="45"/></filter>
+    <filter id="glow" x="-10%" y="-30%" width="120%" height="160%"><feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#000000" flood-opacity="0.45"/></filter>
+    <clipPath id="panel"><rect x="140" y="30" width="920" height="200" rx="30"/></clipPath>
+    <g id="blobs">
+      <circle cx="260" cy="70" r="120" fill="{b1}">
+        <animateTransform attributeName="transform" type="translate" values="0 0;90 40;0 0" dur="14s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="640" cy="230" r="110" fill="{b2}">
+        <animateTransform attributeName="transform" type="translate" values="0 0;-80 -60;0 0" dur="12s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="980" cy="60" r="125" fill="{b3}">
+        <animateTransform attributeName="transform" type="translate" values="0 0;-70 50;0 0" dur="16s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+    <style>
+      .name {{ font: 800 60px 'Segoe UI', Ubuntu, 'Helvetica Neue', Arial, sans-serif; fill: {t['text']}; letter-spacing: 2px; }}
+      .sub  {{ font: 500 20px Consolas, 'Fira Code', 'Courier New', monospace; fill: {t['sub']}; }}
+      .tag  {{ font: 600 14px Consolas, 'Fira Code', 'Courier New', monospace; fill: {a}; letter-spacing: 3px; }}
+      .fade {{ animation: fade 1.4s ease-out both; }}
+      .fade2 {{ animation: fade 1.4s ease-out 0.5s both; }}
+      .cursor {{ animation: blink 1s steps(1) infinite; }}
+      .sweep {{ animation: sweep 6s ease-in-out infinite; }}
+      @keyframes fade {{ from {{ opacity: 0; transform: translateY(10px); }} to {{ opacity: 1; transform: none; }} }}
+      @keyframes blink {{ 50% {{ opacity: 0; }} }}
+      @keyframes sweep {{ 0% {{ transform: translateX(-500px); }} 60%,100% {{ transform: translateX(1300px); }} }}
+    </style>
+  </defs>
+
+  <rect width="1200" height="260" fill="url(#bg)"/>
+  <use xlink:href="#blobs" href="#blobs" filter="url(#soft)" opacity="0.75"/>
+
+  <g clip-path="url(#panel)">
+    <rect x="140" y="30" width="920" height="200" fill="{t['bg'][1]}" fill-opacity="0.55"/>
+    <use xlink:href="#blobs" href="#blobs" filter="url(#frost)" opacity="0.55"/>
+    <rect x="140" y="30" width="920" height="200" fill="#ffffff" fill-opacity="0.10"/>
+    <rect x="140" y="30" width="920" height="200" fill="url(#sheen)"/>
+    <rect class="sweep" x="0" y="30" width="160" height="200" fill="url(#shine)" transform="skewX(-20)"/>
+  </g>
+  <rect x="140.5" y="30.5" width="919" height="199" rx="30" fill="none" stroke="url(#edge)" stroke-width="1.5"/>
+
+  <text class="tag" x="600" y="78" filter="url(#glow)" text-anchor="middle">{tag}</text>
+  <text class="name" x="600" y="146" text-anchor="middle" filter="url(#glow)">{name}</text>
+  <text class="sub" x="600" y="190" filter="url(#glow)" text-anchor="middle">{sub}<tspan class="cursor" fill="{a}"> ▌</tspan></text>
+</svg>
+"""
+
+
 def header_svg(t: dict) -> str:
+    if t.get("style") == "glass":
+        return glass_header_svg(t)
     name = esc(CONFIG.get("display_name", CONFIG["username"]))
     tag = esc(CONFIG.get("tagline", "</>  FULL-STACK  ·  AUTOMATION  ·  AI SYSTEMS"))
     sub = esc(CONFIG.get("subtitle", "$ building software that watches, learns & automates"))
@@ -126,18 +211,19 @@ def header_svg(t: dict) -> str:
   <path fill="{a}" fill-opacity="0.12">
     <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z;M0 230 C300 210 500 250 800 228 C1000 214 1100 236 1200 230 V260 H0Z;M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z"/>
   </path>
-  <text class="tag fade" x="600" y="62" text-anchor="middle">{tag}</text>
-  <text class="name fade" x="600" y="132" text-anchor="middle" filter="url(#glow)">{name}</text>
-  <text class="sub fade2" x="600" y="174" text-anchor="middle">{sub}<tspan class="cursor" fill="{a}"> ▌</tspan></text>
+  <text class="tag" x="600" y="62" text-anchor="middle">{tag}</text>
+  <text class="name" x="600" y="132" text-anchor="middle" filter="url(#glow)">{name}</text>
+  <text class="sub" x="600" y="174" text-anchor="middle">{sub}<tspan class="cursor" fill="{a}"> ▌</tspan></text>
 </svg>
 """
 
 
 def footer_svg(t: dict) -> str:
+    stops = t.get("blobs") or [t["accent"], t["bg"][2], t["bg"][0]]
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="110" viewBox="0 0 1200 110">
   <defs>
     <linearGradient id="f" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="{t['accent']}"/><stop offset="0.5" stop-color="{t['bg'][2]}"/><stop offset="1" stop-color="{t['bg'][0]}"/>
+      <stop offset="0" stop-color="{stops[0]}"/><stop offset="0.5" stop-color="{stops[1]}"/><stop offset="1" stop-color="{stops[2]}"/>
     </linearGradient>
   </defs>
   <path fill="url(#f)" fill-opacity="0.85">
