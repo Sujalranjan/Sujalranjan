@@ -1,0 +1,8 @@
+{
+  "username": "Sujalranjan",
+  "max_projects": 6,
+  "max_activity": 6,
+  "exclude_repos": [],
+  "always_show_skills": ["git", "github-actions", "rest-api", "llm"],
+  "hide_skills": []
+}
