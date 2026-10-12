@@ -8,6 +8,8 @@ on:
     branches: [main]
     paths:
       - ".github/workflows/snake.yml"
+      - "profile.config.json"
+      - "scripts/theme.py"
 
 permissions:
   contents: write
@@ -16,12 +18,19 @@ jobs:
   snake:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
+      - name: Read theme colours
+        id: theme
+        run: |
+          echo "outputs<<EOF" >> "$GITHUB_OUTPUT"
+          python3 scripts/theme.py --snake >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
       - uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark&color_snake=#00f7ff
+          outputs: ${{ steps.theme.outputs.outputs }}
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:

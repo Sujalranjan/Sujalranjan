@@ -27,6 +27,8 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+import theme
+
 ROOT = Path(__file__).resolve().parent.parent
 README = ROOT / "README.md"
 CONFIG = json.loads((ROOT / "profile.config.json").read_text(encoding="utf-8"))
@@ -286,6 +288,7 @@ def replace_section(text: str, name: str, content: str) -> str:
 
 
 def main() -> None:
+    theme.apply()
     repos = fetch_repos()
     lang_bytes: Counter = Counter()
     detected: Counter = Counter()

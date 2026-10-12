@@ -1,17 +1,13 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="260" viewBox="0 0 1200 260">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#0d1117"/>
-      <stop offset="0.6" stop-color="#0b1f4a"/>
-      <stop offset="1" stop-color="#0b3d91"/>
+      <stop offset="0" stop-color="#0d1117"/><stop offset="0.6" stop-color="#0b1f4a"/><stop offset="1" stop-color="#0b3d91"/>
     </linearGradient>
     <linearGradient id="wave" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#00f7ff" stop-opacity="0.15"/>
-      <stop offset="0.5" stop-color="#00f7ff" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#0b3d91" stop-opacity="0.15"/>
+      <stop offset="0" stop-color="#00f7ff" stop-opacity="0.15"/><stop offset="0.5" stop-color="#00f7ff" stop-opacity="0.35"/><stop offset="1" stop-color="#3b82f6" stop-opacity="0.2"/>
     </linearGradient>
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M40 0H0V40" fill="none" stroke="#00f7ff" stroke-opacity="0.07"/>
+      <path d="M40 0H0V40" fill="none" stroke="#00f7ff" stroke-opacity="0.08"/>
     </pattern>
     <filter id="glow"><feGaussianBlur stdDeviation="4" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
     <style>
@@ -28,32 +24,20 @@
       @keyframes pulse { 0%,100% { opacity: .25; } 50% { opacity: 1; } }
     </style>
   </defs>
-
   <rect width="1200" height="260" fill="url(#bg)"/>
   <rect width="1200" height="260" fill="url(#grid)"/>
-
-  <!-- circuit nodes -->
   <g stroke="#00f7ff" stroke-opacity="0.35" fill="none" stroke-width="1.5">
     <path d="M60 40H180L210 70H300"/><path d="M1140 50H1020L990 80H900"/><path d="M80 200H160L190 170H260"/>
   </g>
   <g fill="#00f7ff" filter="url(#glow)">
-    <circle class="node" cx="300" cy="70" r="4"/><circle class="node n2" cx="900" cy="80" r="4"/><circle class="node n3" cx="260" cy="170" r="4"/>
+    <circle class="node" cx="300" cy="70" r="4"/><circle class="node n2" cx="900" cy="80" r="4" fill="#3b82f6"/><circle class="node n3" cx="260" cy="170" r="4"/>
   </g>
-
-  <!-- animated waves -->
   <path fill="url(#wave)">
-    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="
-      M0 215 C200 185 400 245 600 215 C800 185 1000 245 1200 215 V260 H0Z;
-      M0 215 C200 245 400 185 600 215 C800 245 1000 185 1200 215 V260 H0Z;
-      M0 215 C200 185 400 245 600 215 C800 185 1000 245 1200 215 V260 H0Z"/>
+    <animate attributeName="d" dur="8s" repeatCount="indefinite" values="M0 215 C200 185 400 245 600 215 C800 185 1000 245 1200 215 V260 H0Z;M0 215 C200 245 400 185 600 215 C800 245 1000 185 1200 215 V260 H0Z;M0 215 C200 185 400 245 600 215 C800 185 1000 245 1200 215 V260 H0Z"/>
   </path>
   <path fill="#00f7ff" fill-opacity="0.12">
-    <animate attributeName="d" dur="6s" repeatCount="indefinite" values="
-      M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z;
-      M0 230 C300 210 500 250 800 228 C1000 214 1100 236 1200 230 V260 H0Z;
-      M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z"/>
+    <animate attributeName="d" dur="6s" repeatCount="indefinite" values="M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z;M0 230 C300 210 500 250 800 228 C1000 214 1100 236 1200 230 V260 H0Z;M0 230 C300 250 500 210 800 232 C1000 246 1100 224 1200 230 V260 H0Z"/>
   </path>
-
   <text class="tag fade" x="600" y="62" text-anchor="middle">&lt;/&gt;  FULL-STACK  ·  AUTOMATION  ·  AI SYSTEMS</text>
   <text class="name fade" x="600" y="132" text-anchor="middle" filter="url(#glow)">Sujal Ranjan</text>
   <text class="sub fade2" x="600" y="174" text-anchor="middle">$ building software that watches, learns &amp; automates<tspan class="cursor" fill="#00f7ff"> ▌</tspan></text>
