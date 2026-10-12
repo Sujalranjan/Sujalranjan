@@ -27,6 +27,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+import snake
 import theme
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -289,6 +290,10 @@ def replace_section(text: str, name: str, content: str) -> str:
 
 def main() -> None:
     theme.apply()
+    try:
+        snake.main()
+    except Exception as e:  # keep the last snake if the calendar can't be read
+        print(f"snake skipped: {e!r}", file=sys.stderr)
     repos = fetch_repos()
     lang_bytes: Counter = Counter()
     detected: Counter = Counter()

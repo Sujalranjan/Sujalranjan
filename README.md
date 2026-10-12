@@ -159,12 +159,12 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 
 ---
 
-## 🐍 Contribution Snake
+## 🐍 Contribution Hunter
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Sujalranjan/Sujalranjan/output/github-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Sujalranjan/Sujalranjan/output/github-snake.svg" />
-  <img alt="contribution snake" src="https://raw.githubusercontent.com/Sujalranjan/Sujalranjan/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="./assets/snake-light.svg" />
+  <img alt="A snake slithering across my contribution graph, eating each active day" src="./assets/snake-dark.svg" width="100%" />
 </picture>
 
 ---
