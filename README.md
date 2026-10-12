@@ -5,13 +5,13 @@
 
 <p align="center">
   <a href="https://github.com/Sujalranjan">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=00f7ff&center=true&vCenter=true&width=680&lines=%3E+Full-stack+developer+%F0%9F%9A%80;%3E+Turning+repetitive+work+into+workflows+%E2%9A%99%EF%B8%8F;%3E+Python+%C2%B7+FastAPI+%C2%B7+React+%C2%B7+TypeScript;%3E+LLMs+%2B+real+integrations+%3D+automation+%F0%9F%A4%96;%3E+Always+shipping+something+new..." alt="typing intro" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900&color=7cffcb&center=true&vCenter=true&width=680&lines=%3E+Full-stack+developer+%F0%9F%9A%80;%3E+Turning+repetitive+work+into+workflows+%E2%9A%99%EF%B8%8F;%3E+Python+%C2%B7+FastAPI+%C2%B7+React+%C2%B7+TypeScript;%3E+LLMs+%2B+real+integrations+%3D+automation+%F0%9F%A4%96;%3E+Always+shipping+something+new..." alt="typing intro" />
   </a>
 </p>
 
 <p align="center">
-  <a href="https://github.com/Sujalranjan?tab=followers"><img src="https://img.shields.io/github/followers/Sujalranjan?style=for-the-badge&logo=github&color=3b82f6&labelColor=0d1117" alt="followers" /></a>
-  <img src="https://img.shields.io/badge/status-building%20in%20public-00f7ff?style=for-the-badge&labelColor=0d1117" alt="status" />
+  <a href="https://github.com/Sujalranjan?tab=followers"><img src="https://img.shields.io/github/followers/Sujalranjan?style=for-the-badge&logo=github&color=b388ff&labelColor=0b1026" alt="followers" /></a>
+  <img src="https://img.shields.io/badge/status-building%20in%20public-7cffcb?style=for-the-badge&labelColor=0b1026" alt="status" />
 </p>
 <!--END:HEADER-->
 
@@ -139,8 +139,8 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 
 <!--START:STATS-->
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Sujalranjan&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=0d1117&title_color=00f7ff&icon_color=3b82f6&text_color=c9d1d9&ring_color=00f7ff" alt="GitHub stats" />
-  <img height="170" src="https://streak-stats.demolab.com?user=Sujalranjan&hide_border=true&background=0d1117&ring=00f7ff&fire=3b82f6&currStreakNum=00f7ff&currStreakLabel=00f7ff&sideNums=c9d1d9&sideLabels=c9d1d9&dates=c9d1d9&stroke=3b82f6" alt="GitHub streak" />
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Sujalranjan&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github&bg_color=0b1026&title_color=7cffcb&icon_color=b388ff&text_color=d7f7ff&ring_color=7cffcb" alt="GitHub stats" />
+  <img height="170" src="https://streak-stats.demolab.com?user=Sujalranjan&hide_border=true&background=0b1026&ring=7cffcb&fire=b388ff&currStreakNum=7cffcb&currStreakLabel=7cffcb&sideNums=d7f7ff&sideLabels=d7f7ff&dates=d7f7ff&stroke=b388ff" alt="GitHub streak" />
 </p>
 <!--END:STATS-->
 
