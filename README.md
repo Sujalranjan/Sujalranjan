@@ -38,8 +38,8 @@ class SujalRanjan:
 <!--START:SKILLS-->
 <h4>💻 Languages</h4>
 <p>
-  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" />
 </p>
@@ -47,23 +47,21 @@ class SujalRanjan:
 <p>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
   <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" alt="Pydantic" />
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/Uvicorn-499848?style=for-the-badge&logo=gunicorn&logoColor=white" alt="Uvicorn" />
   <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" />
+  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
 </p>
 <h4>🛠️ Tools, Platforms & Integrations</h4>
 <p>
   <img src="https://img.shields.io/badge/Google%20APIs-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google APIs" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/Chrome%20Extensions-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Extensions" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white" alt="SQLite" />
+  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/LLMs-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" alt="LLMs" />
@@ -111,12 +109,10 @@ class SujalRanjan:
 <!--START:PROJECTS-->
 | 🚀 Project | 📝 What it does | 🧰 Stack | ⭐ | 🕒 Updated |
 |---|---|---|:-:|---|
-| [**WorkFlow-OS**](https://github.com/Sujalranjan/WorkFlow-OS) | _Fresh build — description coming soon._ | `Python` | 0 | 5 d ago |
-| [**CardArena**](https://github.com/Sujalranjan/CardArena) | _Fresh build — description coming soon._ | `Python` | 0 | 20 d ago |
+| [**MemBrain**](https://github.com/Sujalranjan/MemBrain) | The Problem: Large organizations suffer from "Corporate Amnesia." Critical decisions, meeting outcomes, and… | `HTML` | 0 | 1 h ago |
+| [**WorkFlow-OS**](https://github.com/Sujalranjan/WorkFlow-OS) | _Fresh build — description coming soon._ | `Python` | 0 | 6 d ago |
 | [**MailEaseAI**](https://github.com/Sujalranjan/MailEaseAI) | _Fresh build — description coming soon._ | `Python` | 0 | 1 mo ago |
-| [**Trio.AI**](https://github.com/Sujalranjan/Trio.AI) | The Problem: Large organizations suffer from "Corporate Amnesia." Critical decisions, meeting outcomes, and… | `HTML` | 0 | 7 mo ago |
-| [**Smart-Bill-Reader**](https://github.com/Sujalranjan/Smart-Bill-Reader) | AI-Powered Expense Automation Platform built with React Native and Python Flask. Features automated invoice… | `TypeScript` | 0 | 10 mo ago |
-| [**TeensyBit**](https://github.com/Sujalranjan/TeensyBit) | _Fresh build — description coming soon._ | `—` | 0 | 34 mo ago |
+| [**Smart-Bill-Reader**](https://github.com/Sujalranjan/Smart-Bill-Reader) | AI-Powered Expense Automation Platform built with React Native and Python Flask. Features automated invoice… | `TypeScript` | 0 | 11 mo ago |
 <!--END:PROJECTS-->
 
 ---
@@ -127,10 +123,10 @@ class SujalRanjan:
 ```text
 $ git-stats --languages --user Sujalranjan
 
-Python            ███████████████░░░░░░░░░░   60.1 %
-HTML              █████░░░░░░░░░░░░░░░░░░░░   20.8 %
-TypeScript        ████░░░░░░░░░░░░░░░░░░░░░   17.9 %
-JavaScript        ░░░░░░░░░░░░░░░░░░░░░░░░░    1.3 %
+Python            ██████████████░░░░░░░░░░░   57.3 %
+TypeScript        ██████░░░░░░░░░░░░░░░░░░░   22.1 %
+HTML              █████░░░░░░░░░░░░░░░░░░░░   19.0 %
+JavaScript        ░░░░░░░░░░░░░░░░░░░░░░░░░    1.6 %
 ```
 <!--END:LANGS-->
 
@@ -146,12 +142,12 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 ## ⚡ Live Activity Feed
 
 <!--START:ACTIVITY-->
-1. ⬆️ Pushed 1 commit to [Sujalranjan/GitOnboard](https://github.com/Sujalranjan/GitOnboard) · <sub>2 d ago</sub>
-2. ⬆️ Pushed 1 commit to [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>5 d ago</sub>
-3. ⬆️ Pushed 1 commit to [TannushreeVaishnav/Traffic-Accident-Severity-Analytics-and-Prediction](https://github.com/TannushreeVaishnav/Traffic-Accident-Severity-Analytics-and-Prediction) · <sub>7 d ago</sub>
-4. ⬆️ Pushed 1 commit to [Sujalranjan/Sujalranjan](https://github.com/Sujalranjan/Sujalranjan) · <sub>7 d ago</sub>
-5. ⬆️ Pushed 1 commit to [Sujalranjan/Traffic-Accident-Severity-Analytics-and-Prediction](https://github.com/Sujalranjan/Traffic-Accident-Severity-Analytics-and-Prediction) · <sub>8 d ago</sub>
-6. ⬆️ Pushed 1 commit to [Sujalranjan/GitOnboard](https://github.com/Sujalranjan/GitOnboard) · <sub>6 d ago</sub>
+1. 🔀 Merged PR #1 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>1 h ago</sub>
+2. 🔀 Opened PR #1 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>1 h ago</sub>
+3. ⬆️ Pushed 1 commit to [Sujalranjan/GitOnboard](https://github.com/Sujalranjan/GitOnboard) · <sub>2 d ago</sub>
+4. ⬆️ Pushed 1 commit to [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>6 d ago</sub>
+5. ⬆️ Pushed 1 commit to [TannushreeVaishnav/Traffic-Accident-Severity-Analytics-and-Prediction](https://github.com/TannushreeVaishnav/Traffic-Accident-Severity-Analytics-and-Prediction) · <sub>7 d ago</sub>
+6. ⬆️ Pushed 1 commit to [Sujalranjan/Sujalranjan](https://github.com/Sujalranjan/Sujalranjan) · <sub>8 d ago</sub>
 <!--END:ACTIVITY-->
 
 ---
@@ -176,7 +172,7 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 
 <p align="center">
 <!--START:UPDATED-->
-<sub>🤖 Auto-generated by GitHub Actions · last sync 21 Oct 2026, 17:02 UTC · 6 public repos scanned</sub>
+<sub>🤖 Auto-generated by GitHub Actions · last sync 21 Oct 2026, 21:31 UTC · 4 public repos scanned</sub>
 <!--END:UPDATED-->
 </p>
 
