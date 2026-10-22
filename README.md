@@ -51,6 +51,7 @@ class SujalRanjan:
   <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
+  <img src="https://img.shields.io/badge/Claude%20API-D97757?style=for-the-badge&logo=anthropic&logoColor=white" alt="Claude API" />
   <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" alt="Flask" />
   <img src="https://img.shields.io/badge/OpenAI-412991?style=for-the-badge&logo=openai&logoColor=white" alt="OpenAI" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
@@ -60,10 +61,10 @@ class SujalRanjan:
   <img src="https://img.shields.io/badge/Google%20APIs-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google APIs" />
   <img src="https://img.shields.io/badge/Chrome%20Extensions-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Extensions" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
   <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" alt="Vite" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/LLMs-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" alt="LLMs" />
   <img src="https://img.shields.io/badge/REST%20APIs-FF6C37?style=for-the-badge&logo=postman&logoColor=white" alt="REST APIs" />
 </p>
@@ -109,7 +110,7 @@ class SujalRanjan:
 <!--START:PROJECTS-->
 | 🚀 Project | 📝 What it does | 🧰 Stack | ⭐ | 🕒 Updated |
 |---|---|---|:-:|---|
-| [**MemBrain**](https://github.com/Sujalranjan/MemBrain) | The Problem: Large organizations suffer from "Corporate Amnesia." Critical decisions, meeting outcomes, and… | `HTML` | 0 | 1 h ago |
+| [**MemBrain**](https://github.com/Sujalranjan/MemBrain) | The Problem: Large organizations suffer from "Corporate Amnesia." Critical decisions, meeting outcomes, and… | `Python` | 0 | 1 h ago |
 | [**WorkFlow-OS**](https://github.com/Sujalranjan/WorkFlow-OS) | _Fresh build — description coming soon._ | `Python` | 0 | 6 d ago |
 | [**MailEaseAI**](https://github.com/Sujalranjan/MailEaseAI) | _Fresh build — description coming soon._ | `Python` | 0 | 1 mo ago |
 | [**Smart-Bill-Reader**](https://github.com/Sujalranjan/Smart-Bill-Reader) | AI-Powered Expense Automation Platform built with React Native and Python Flask. Features automated invoice… | `TypeScript` | 0 | 11 mo ago |
@@ -123,10 +124,10 @@ class SujalRanjan:
 ```text
 $ git-stats --languages --user Sujalranjan
 
-Python            ██████████████░░░░░░░░░░░   57.3 %
-TypeScript        ██████░░░░░░░░░░░░░░░░░░░   22.1 %
-HTML              █████░░░░░░░░░░░░░░░░░░░░   19.0 %
-JavaScript        ░░░░░░░░░░░░░░░░░░░░░░░░░    1.6 %
+Python            ████████████████░░░░░░░░░   64.9 %
+TypeScript        ██████░░░░░░░░░░░░░░░░░░░   22.2 %
+HTML              ███░░░░░░░░░░░░░░░░░░░░░░   11.3 %
+JavaScript        ░░░░░░░░░░░░░░░░░░░░░░░░░    1.7 %
 ```
 <!--END:LANGS-->
 
@@ -142,12 +143,12 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 ## ⚡ Live Activity Feed
 
 <!--START:ACTIVITY-->
-1. 🔀 Merged PR #1 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>1 h ago</sub>
-2. 🔀 Opened PR #1 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>1 h ago</sub>
-3. ⬆️ Pushed 1 commit to [Sujalranjan/GitOnboard](https://github.com/Sujalranjan/GitOnboard) · <sub>2 d ago</sub>
-4. ⬆️ Pushed 1 commit to [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>6 d ago</sub>
-5. ⬆️ Pushed 1 commit to [TannushreeVaishnav/Traffic-Accident-Severity-Analytics-and-Prediction](https://github.com/TannushreeVaishnav/Traffic-Accident-Severity-Analytics-and-Prediction) · <sub>7 d ago</sub>
-6. ⬆️ Pushed 1 commit to [Sujalranjan/Sujalranjan](https://github.com/Sujalranjan/Sujalranjan) · <sub>8 d ago</sub>
+1. ⬆️ Pushed 1 commit to [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>4 h ago</sub>
+2. 🔀 Merged PR #3 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>4 h ago</sub>
+3. 🔀 Merged PR #4 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>4 h ago</sub>
+4. 🔀 Closed PR #9 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>4 h ago</sub>
+5. 🔀 Assigned PR #11 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>6 h ago</sub>
+6. 🔀 Assigned PR #10 in [Sujalranjan/MemBrain](https://github.com/Sujalranjan/MemBrain) · <sub>6 h ago</sub>
 <!--END:ACTIVITY-->
 
 ---
@@ -172,7 +173,7 @@ JavaScript        ░░░░░░░░░░░░░░░░░░░░�
 
 <p align="center">
 <!--START:UPDATED-->
-<sub>🤖 Auto-generated by GitHub Actions · last sync 21 Oct 2026, 21:31 UTC · 4 public repos scanned</sub>
+<sub>🤖 Auto-generated by GitHub Actions · last sync 22 Oct 2026, 04:23 UTC · 4 public repos scanned</sub>
 <!--END:UPDATED-->
 </p>
 
