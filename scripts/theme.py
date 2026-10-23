@@ -243,6 +243,8 @@ def header_section(t: dict) -> str:
     typing = (f"https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=900"
               f"&color={hx(t['accent'])}&center=true&vCenter=true&width=680&lines={lines}")
     dark = hx(t["bg"][0])
+    # shields.io: spaces -> %20, and a literal "-" must be doubled
+    status = urllib.parse.quote(CONFIG.get("status_badge", "building in public").replace("-", "--"))
     return f"""<p align="center">
   <img src="./assets/header.svg" width="100%" alt="{esc(CONFIG.get('display_name', user))}" />
 </p>
@@ -255,7 +257,7 @@ def header_section(t: dict) -> str:
 
 <p align="center">
   <a href="https://github.com/{user}?tab=followers"><img src="https://img.shields.io/github/followers/{user}?style=for-the-badge&logo=github&color={hx(t['accent2'])}&labelColor={dark}" alt="followers" /></a>
-  <img src="https://img.shields.io/badge/status-building%20in%20public-{hx(t['accent'])}?style=for-the-badge&labelColor={dark}" alt="status" />
+  <img src="https://img.shields.io/badge/status-{status}-{hx(t['accent'])}?style=for-the-badge&labelColor={dark}" alt="status" />
 </p>"""
 
 

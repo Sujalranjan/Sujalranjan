@@ -271,8 +271,8 @@ def render(cells, total, t: dict, dark: bool) -> str:
     return "\n".join(out)
 
 
-def main() -> None:
-    cells, total = fetch_calendar()
+def main(data: tuple[list, int] | None = None) -> None:
+    cells, total = data or fetch_calendar()
     if not cells:
         raise SystemExit("could not read the contribution calendar")
     t = theme.current()

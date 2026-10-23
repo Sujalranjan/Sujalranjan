@@ -3,23 +3,105 @@
   "theme": "glass-aurora",
   "_themes": "cyber | matrix | synthwave | dracula | ember | nord | aurora | paper | glass | glass-aurora",
   "display_name": "Sujal Ranjan",
-  "tagline": "</>  FULL-STACK  ·  AUTOMATION  ·  AI SYSTEMS",
-  "subtitle": "$ building software that watches, learns & automates",
+  "tagline": "</>  AI ENGINEER  ·  RETRIEVAL  ·  AUTOMATION  ·  DATA",
+  "subtitle": "$ building AI systems that are measured, tested & shipped",
   "typing_lines": [
-    "> Full-stack developer 🚀",
-    "> Turning repetitive work into workflows ⚙️",
-    "> Python · FastAPI · React · TypeScript",
-    "> LLMs + real integrations = automation 🤖",
-    "> Always shipping something new..."
+    "> Building AI systems that actually ship 🚀",
+    "> Hybrid search · RAG · cited answers 🔎",
+    "> Automating the work people repeat ⚙️",
+    "> Data pipelines & MLOps: Airflow · MLflow 📈",
+    "> Python · FastAPI · PostgreSQL · React"
   ],
+  "status_badge": "open to collaborate",
+
+  "whoami": {
+    "role": "Full-Stack & AI Engineer",
+    "focus": ["retrieval & RAG", "LLM-powered automation", "data pipelines & MLOps"],
+    "learning": ["retrieval evaluation", "agentic workflows", "production ML"],
+    "open_to": ["collaborations", "hackathons", "open source"],
+    "philosophy": "If I do it twice, I automate it the third time.",
+    "hello": "Thanks for dropping by. Let's build something that saves people time! ⚡"
+  },
+
+  "impact": [
+    { "value": "+5.3%", "label": "Recall@5 from hybrid search over vector-only (BEIR SciFact)", "source": "MemBrain" },
+    { "value": "513K", "label": "real road-collision records in an Airflow + MLflow pipeline", "source": "Traffic-Accident-Severity-Analytics-and-Prediction", "source_label": "Traffic Analytics" },
+    { "value": "86", "label": "automated tests in CI on Python 3.10 and 3.12", "source": "MemBrain" },
+    { "value": "auto:contributions", "label": "contributions in the last year" }
+  ],
+
+  "featured": [
+    {
+      "repo": "MemBrain",
+      "emoji": "🧠",
+      "tagline": "A self-hosted knowledge base for teams: capture notes, decisions, SOPs and voice memos, then search by meaning and get cited answers.",
+      "points": [
+        "Hybrid vector + BM25 search fused with RRF: +5.3% Recall@5 on BEIR SciFact",
+        "BM25 written in SQL lifted keyword Recall@5 from 0.07 to 0.75",
+        "All in PostgreSQL: pgvector, job queue and rate limiting; 86 tests in CI"
+      ],
+      "stack": ["python", "fastapi", "postgresql", "pgvector", "docker"]
+    },
+    {
+      "repo": "WorkFlow-OS",
+      "title": "WorkFlow OS",
+      "emoji": "⚙️",
+      "tagline": "Watches the routine work you repeat across apps, turns it into a workflow you approve, then runs it for you, with a dry run first.",
+      "points": [
+        "Desktop agent and browser extension observe real activity",
+        "Deterministic action catalog; LLM output is validated so it can't re-route steps",
+        "Executes through Gmail, a CRM and Slack, each with an independent verifier"
+      ],
+      "stack": ["python", "fastapi", "react", "typescript", "llm"]
+    },
+    {
+      "repo": "Traffic-Accident-Severity-Analytics-and-Prediction",
+      "title": "Traffic Accident Analytics",
+      "emoji": "🚦",
+      "team": true,
+      "demo": "https://traffic-accident-severity-analytics-and-prediction-3yzwgf7tuhc.streamlit.app/",
+      "tagline": "End-to-end data engineering and MLOps system that predicts accident severity from UK road-safety and weather data.",
+      "points": [
+        "513,801 STATS19 collisions joined with hourly Open-Meteo weather",
+        "Star-schema warehouse in PostgreSQL/PostGIS behind a data-quality gate",
+        "Airflow DAG with MLflow tracking and conditional retraining"
+      ],
+      "stack": ["python", "postgresql", "airflow", "mlflow", "streamlit"]
+    },
+    {
+      "repo": "GitOnboard",
+      "emoji": "🗺️",
+      "team": true,
+      "tagline": "Turns any GitHub repository into an interactive knowledge graph so new developers onboard faster.",
+      "points": [
+        "Multi-language AST parsing with Tree-sitter",
+        "Semantic code search, dependency and impact analysis",
+        "FastAPI + Next.js + PostgreSQL, all in Docker Compose"
+      ],
+      "stack": ["python", "fastapi", "next", "postgresql", "tree-sitter"]
+    }
+  ],
+
+  "descriptions": {
+    "WorkFlow-OS": "Learns the routine work you repeat across apps and runs it for you through Gmail, CRM and Slack.",
+    "MailEaseAI": "AI email assistant: syncs your inbox over IMAP, groups threads and turns emails into tasks with deadlines.",
+    "Traffic-Accident-Severity-Analytics-and-Prediction": "Data engineering + MLOps system predicting road-accident severity from 513K real UK records."
+  },
+
+  "include_forks": ["GitOnboard", "Traffic-Accident-Severity-Analytics-and-Prediction", "placement-prediction"],
+
+  "socials": {
+    "linkedin": "",
+    "x": "",
+    "leetcode": "",
+    "kaggle": "",
+    "portfolio": "",
+    "email": ""
+  },
+
   "max_projects": 6,
-  "max_activity": 6,
+  "max_activity": 5,
   "exclude_repos": [],
-  "always_show_skills": [
-    "git",
-    "github-actions",
-    "rest-api",
-    "llm"
-  ],
-  "hide_skills": []
+  "always_show_skills": ["git", "github-actions", "rest-api", "llm"],
+  "hide_skills": ["uvicorn", "alembic", "numpy", "sqlite", "aiosqlite", "vite"]
 }

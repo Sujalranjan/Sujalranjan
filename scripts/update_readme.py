@@ -1,11 +1,13 @@
 """Regenerate the dynamic sections of the profile README.
 
-Reads every public, non-fork repo of the configured user and rebuilds:
+Reads every public repo of the configured user (forks only when listed in
+"include_forks", i.e. team projects you contributed to) and rebuilds:
   SKILLS    badges for languages, frameworks and tools found in the repos
   LANGS     a terminal-style language breakdown
-  PROJECTS  the most recently pushed repos
+  PROJECTS  recently pushed repos that aren't already featured
   ACTIVITY  the latest public events
   UPDATED   a timestamp
+plus the config-driven WHOAMI, IMPACT, FEATURED and CONNECT sections (showcase.py).
 
 Only the text between <!--START:X--> and <!--END:X--> markers is replaced,
 so everything else in README.md can be edited by hand. Standard library only.
@@ -27,6 +29,7 @@ from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
 
+import showcase
 import snake
 import theme
 
@@ -95,6 +98,17 @@ SKILLS: dict[str, tuple[str, str, str, str]] = {
     "aiosqlite": ("SQLite", "003B57", "sqlite", "tool"),
     "postgresql": ("PostgreSQL", "4169E1", "postgresql", "tool"),
     "psycopg2": ("PostgreSQL", "4169E1", "postgresql", "tool"),
+    "psycopg2-binary": ("PostgreSQL", "4169E1", "postgresql", "tool"),
+    "psycopg": ("PostgreSQL", "4169E1", "postgresql", "tool"),
+    "asyncpg": ("PostgreSQL", "4169E1", "postgresql", "tool"),
+    "pgvector": ("pgvector", "336791", "postgresql", "tool"),
+    "apache-airflow": ("Airflow", "017CEE", "apacheairflow", "tool"),
+    "mlflow": ("MLflow", "0194E2", "mlflow", "tool"),
+    "alembic": ("Alembic", "6BA81E", "sqlalchemy", "tool"),
+    "tree-sitter": ("Tree--sitter", "5E7C3C", "treesitter", "fw"),
+    "plotly": ("Plotly", "3F4F75", "plotly", "fw"),
+    "expo": ("Expo", "000020", "expo", "fw"),
+    "react-native": ("React Native", "61DAFB", "react", "fw"),
     "pymongo": ("MongoDB", "47A248", "mongodb", "tool"),
     "mongoose": ("MongoDB", "47A248", "mongodb", "tool"),
     "redis": ("Redis", "DC382D", "redis", "tool"),
@@ -147,7 +161,10 @@ def fetch_repos() -> list[dict]:
         repos += batch
         page += 1
     excluded = {n.lower() for n in CONFIG.get("exclude_repos", [])} | {USER.lower()}
-    return [r for r in repos if not r["fork"] and not r["archived"] and r["name"].lower() not in excluded]
+    team = {n.lower() for n in CONFIG.get("include_forks", [])}
+    return [r for r in repos
+            if (not r["fork"] or r["name"].lower() in team)
+            and not r["archived"] and r["name"].lower() not in excluded]
 
 
 def packages_from(path: str, text: str) -> set[str]:
@@ -240,13 +257,17 @@ def ago(iso: str) -> str:
 
 
 def render_projects(repos: list[dict]) -> str:
-    rows = ["| 🚀 Project | 📝 What it does | 🧰 Stack | ⭐ | 🕒 Updated |", "|---|---|---|:-:|---|"]
-    for r in repos[: CONFIG.get("max_projects", 6)]:
-        desc = (r["description"] or "_Fresh build — description coming soon._").replace("|", "\\|")
+    featured = {p["repo"].lower() for p in CONFIG.get("featured", [])}
+    rest = [r for r in repos if r["name"].lower() not in featured]
+    if not rest:
+        return "_Everything I've built so far is featured above._"
+    rows = ["| 🚀 Project | 📝 What it does | 🧰 Stack | 🕒 Updated |", "|---|---|---|---|"]
+    for r in rest[: CONFIG.get("max_projects", 6)]:
+        desc = (showcase.describe(r, CONFIG) or "Code and notes inside the repo.").replace("|", "\\|")
         if len(desc) > 110:
             desc = desc[:107].rstrip() + "…"
-        rows.append(f"| [**{r['name']}**]({r['html_url']}) | {desc} | `{r['language'] or '—'}` "
-                    f"| {r['stargazers_count']} | {ago(r['pushed_at'])} |")
+        name = f"[**{r['name']}**]({r['html_url']})" + (" <sub>👥 team</sub>" if r["fork"] else "")
+        rows.append(f"| {name} | {desc} | `{r['language'] or '—'}` | {ago(r['pushed_at'])} |")
     return "\n".join(rows)
 
 
@@ -290,8 +311,10 @@ def replace_section(text: str, name: str, content: str) -> str:
 
 def main() -> None:
     theme.apply()
+    contributions = 0
     try:
-        snake.main()
+        cells, contributions = snake.fetch_calendar()
+        snake.main((cells, contributions))
     except Exception as e:  # keep the last snake if the calendar can't be read
         print(f"snake skipped: {e!r}", file=sys.stderr)
     repos = fetch_repos()
@@ -312,6 +335,10 @@ def main() -> None:
             print(f"skipped {r['name']}: {e!r}", file=sys.stderr)
 
     text = README.read_text(encoding="utf-8")
+    text = replace_section(text, "WHOAMI", showcase.render_whoami(CONFIG, repos))
+    text = replace_section(text, "IMPACT", showcase.render_impact(CONFIG, contributions))
+    text = replace_section(text, "FEATURED", showcase.render_featured(CONFIG))
+    text = replace_section(text, "CONNECT", showcase.render_connect(CONFIG))
     text = replace_section(text, "SKILLS", render_skills(detected))
     text = replace_section(text, "LANGS", render_langs(lang_bytes))
     text = replace_section(text, "PROJECTS", render_projects(repos))
