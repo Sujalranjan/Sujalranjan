@@ -23,7 +23,7 @@
 ```python
 class SujalRanjan:
     role       = "Full-Stack & AI Engineer"
-    building   = "Smart-Bill-Reader: AI-Powered Expense Automation Platform built with Re..."
+    building   = "WorkFlow-OS: Learns the routine work you repeat across apps and runs it..."
     focus      = ["retrieval & RAG", "LLM-powered automation", "data pipelines & MLOps"]
     learning   = ["retrieval evaluation", "agentic workflows", "production ML"]
     open_to    = ["collaborations", "hackathons", "open source"]
@@ -42,7 +42,7 @@ class SujalRanjan:
 <td align="center" width="25%"><h2>+5.3%</h2><sub>Recall@5 from hybrid search over vector-only (BEIR SciFact)<br/><a href="https://github.com/Sujalranjan/MemBrain">MemBrain</a></sub></td>
 <td align="center" width="25%"><h2>513K</h2><sub>real road-collision records in an Airflow + MLflow pipeline<br/><a href="https://github.com/Sujalranjan/Traffic-Accident-Severity-Analytics-and-Prediction">Traffic Analytics</a></sub></td>
 <td align="center" width="25%"><h2>86</h2><sub>automated tests in CI on Python 3.10 and 3.12<br/><a href="https://github.com/Sujalranjan/MemBrain">MemBrain</a></sub></td>
-<td align="center" width="25%"><h2>277</h2><sub>contributions in the last year</sub></td>
+<td align="center" width="25%"><h2>286</h2><sub>contributions in the last year</sub></td>
 </tr>
 </table>
 <!--END:IMPACT-->
@@ -103,9 +103,9 @@ class SujalRanjan:
 <h4>⚙️ Frameworks & Libraries</h4>
 <p>
   <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
+  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
   <img src="https://img.shields.io/badge/Pydantic-E92063?style=for-the-badge&logo=pydantic&logoColor=white" alt="Pydantic" />
   <img src="https://img.shields.io/badge/Pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white" alt="Pytest" />
-  <img src="https://img.shields.io/badge/SQLAlchemy-D71F00?style=for-the-badge&logo=sqlalchemy&logoColor=white" alt="SQLAlchemy" />
   <img src="https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white" alt="Pandas" />
   <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white" alt="React" />
   <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=for-the-badge&logo=scikitlearn&logoColor=white" alt="scikit-learn" />
@@ -125,10 +125,10 @@ class SujalRanjan:
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
   <img src="https://img.shields.io/badge/Google%20APIs-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="Google APIs" />
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/Chrome%20Extensions-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Chrome Extensions" />
   <img src="https://img.shields.io/badge/MLflow-0194E2?style=for-the-badge&logo=mlflow&logoColor=white" alt="MLflow" />
   <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
   <img src="https://img.shields.io/badge/pgvector-336791?style=for-the-badge&logo=postgresql&logoColor=white" alt="pgvector" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
   <img src="https://img.shields.io/badge/LLMs-8A2BE2?style=for-the-badge&logo=openai&logoColor=white" alt="LLMs" />
@@ -144,7 +144,7 @@ class SujalRanjan:
 <!--START:PROJECTS-->
 | 🚀 Project | 📝 What it does | 🧰 Stack | 🕒 Updated |
 |---|---|---|---|
-| [**Smart-Bill-Reader**](https://github.com/Sujalranjan/Smart-Bill-Reader) | AI-Powered Expense Automation Platform built with React Native and Python Flask. Features automated invoice… | `Python` | 1 d ago |
+| [**Smart-Bill-Reader**](https://github.com/Sujalranjan/Smart-Bill-Reader) | AI-Powered Expense Automation Platform built with React Native and Python Flask. Features automated invoice… | `Python` | 2 d ago |
 | [**placement-prediction**](https://github.com/Sujalranjan/placement-prediction) <sub>👥 team</sub> | End-to-end Student Placement & Salary Package Prediction dashboard using a calibrated Scikit-Learn Random F… | `Python` | 1 mo ago |
 | [**MailEaseAI**](https://github.com/Sujalranjan/MailEaseAI) | AI email assistant: syncs your inbox over IMAP, groups threads and turns emails into tasks with deadlines. | `Python` | 2 mo ago |
 <!--END:PROJECTS-->
@@ -175,11 +175,11 @@ HTML              ██░░░░░░░░░░░░░░░░░░�
 ## ⚡ Live Activity Feed
 
 <!--START:ACTIVITY-->
-1. ⬆️ Pushed 1 commit to [Sujalranjan/Smart-Bill-Reader](https://github.com/Sujalranjan/Smart-Bill-Reader) · <sub>1 d ago</sub>
-2. ⬆️ Pushed 1 commit to [Sujalranjan/GitOnboard](https://github.com/Sujalranjan/GitOnboard) · <sub>3 d ago</sub>
-3. 🔀 Merged PR #1 in [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>3 d ago</sub>
-4. 🔀 Opened PR #1 in [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>3 d ago</sub>
-5. 🔀 Opened PR #18 in [salianDheeraj/GitOnboard](https://github.com/salianDheeraj/GitOnboard) · <sub>3 d ago</sub>
+1. 🔀 Merged PR #2 in [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>5 h ago</sub>
+2. 🔀 Opened PR #2 in [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>5 h ago</sub>
+3. ⬆️ Pushed 1 commit to [Sujalranjan/Smart-Bill-Reader](https://github.com/Sujalranjan/Smart-Bill-Reader) · <sub>2 d ago</sub>
+4. ⬆️ Pushed 1 commit to [Sujalranjan/GitOnboard](https://github.com/Sujalranjan/GitOnboard) · <sub>4 d ago</sub>
+5. 🔀 Merged PR #1 in [Sujalranjan/WorkFlow-OS](https://github.com/Sujalranjan/WorkFlow-OS) · <sub>4 d ago</sub>
 <!--END:ACTIVITY-->
 
 ---
@@ -204,7 +204,7 @@ HTML              ██░░░░░░░░░░░░░░░░░░�
 
 <p align="center">
 <!--START:UPDATED-->
-<sub>🤖 Auto-generated by GitHub Actions · last sync 19 Nov 2026, 07:03 UTC · 7 public repos scanned</sub>
+<sub>🤖 Auto-generated by GitHub Actions · last sync 19 Nov 2026, 20:25 UTC · 7 public repos scanned</sub>
 <!--END:UPDATED-->
 </p>
 
